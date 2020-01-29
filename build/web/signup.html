@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Signup</title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         
+         
+         <style>
+             .form{
+                 align-content: center;
+                 margin-top: 140px;
+             }
+             img{
+                 width: 30px;
+                 height: 30px;
+                 margin-left: 740px;
+             }
+                 .in{
+                     width: 500px;
+                     height: 50px;
+                     border: .05px solid buttonface;
+                     border-radius: 5px;
+                 }
+                 
+                 .button{
+                     border: #eaeaea;
+                     border-radius: 5px;
+                     width: 500px;
+                     height: 50px;
+                     background: #5b6062;
+                     color:whitesmoke;
+                 }   
+             .button:hover{
+                 background: #9fd6e8;
+             }
+             .navbar{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.r{
+    margin-top: 0px !important;
+}
+.op{
+    margin-top: 10px;
+   
+}
+
+
+         </style>
+    </head>
+    <body>
+        <!--navbar-->
+          <nav class="navbar navbar-default navbar-custom navbar-fixed-top custom">
+ 
+             <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>    
+          <a class="navbar-brand r" href="#">
+              <img alt="Brand" src="images/logo_1.png" width="30" height="30">
+      </a>
+        <a class="navbar-brand " href="index.html" ></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+           <li>  <a class="op" href="login.html">Have an account? Login <i class="fa fa-user" aria-hidden="true"></i></a></li>
+          
+          
+       </ul>
+      
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->  
+</nav>
+                 
+        
+        
+        
+        
+        
+        
+        
+        <div align="center" class=" form">
+            <h2>Join Today.</h2>
+            <form action="db_entry.jsp" >
+                <br><br>
+                <input class="in" type="text" name="name" value="" placeholder="  Full name" required/><br><br>
+                <input class="in" type="email" name="email" value="" placeholder=" Email" required/><br><br>
+                <input class="in" type="tel" name="number" value=""  placeholder="  Phone number" pattern=".{10}" required title="invalid number" /><br><br>
+                <input class="in" type="password" name="password" value="" placeholder="  Password" required /><br><br>
+                Year : <select name="year">
+                    <option>1st</option>
+                    <option>2nd</option>
+                    <option>3rd</option>
+                    <option>4th</option>
+                </select><br><br>
+                Choose Your Stream:  CS <input type="radio" name="subject" value="CS" required />  IT<input type="radio" name="subject" value="IT" /><br><br><br>
+                <input type="submit" value="SIGN UP" class="button" />
+            </form>
+        </div>
+    </body>
+</html>

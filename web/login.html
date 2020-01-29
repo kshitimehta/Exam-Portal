@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            body{
+               
+                
+            }
+             .im2{
+                 width: 30px;
+                 height: 30px;
+                 margin-left: 740px;
+                 
+             }
+            .container{
+                width: 500px;
+                height: 550px;
+                align-content: center;
+                margin-top: 100px;
+                  background: rgba(255, 255, 255, 0.5);
+                padding-top: 20px;
+            }
+            .im{
+                width:150px;
+                height: 150px;
+                border-radius: 50%;
+                
+   
+            }
+              .in{
+                     width: 350px;
+                     height: 50px;
+                     border: .05px solid buttonface;
+                     border-radius: 5px;
+                 }
+                 
+               .button{
+                     border: #eaeaea;
+                     border-radius: 5px;
+                     width: 350px;
+                     height: 50px;
+                     background: #5b6062;
+                     color:whitesmoke;
+                 }   
+             .button:hover{
+                 background: #9fd6e8;
+             }
+            
+        </style>
+    </head>
+    <body>
+         <nav class="navbar navbar-default navbar-custom navbar-fixed-top custom">
+ 
+             <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>    
+          <a class="navbar-brand r" href="#">
+              <img class="im2" alt="Brand" src="images/logo_1.png" width="30" height="30">
+      </a>
+        <a class="navbar-brand " href="index.html" ></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+            <li> <a  class="op" href="signup.html">New User? Signup <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+          
+          
+       </ul>
+      
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->  
+</nav>
+                 
+        <div align="center" class="container">
+            <img class="im" src="images/sad.png"><br><br><br><br>
+            <form action="login.jsp" method="POST">
+                <input class="in" type="text" name="name2" value="" placeholder="  name" required/><br><br>
+                <input class="in" type="password" name="password2" value="" placeholder="  password" required/><br><br>
+                <input class="button" type="submit" value="Login" />
+            
+            
+            </form>
+            
+        </div>
+        
+    </body>
+</html>
